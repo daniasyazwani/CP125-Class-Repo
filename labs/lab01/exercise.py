@@ -1,12 +1,16 @@
-def display_score(name,marks):
-    score = (f"{name} scored {marks} marks")
-    return score
+def add_with_print(a, b):
+    result = a + b
+    print(result)  # shows the number
 
-name1 = "Ahmad"
-marks1 = 85
-name2 = "Fatimah"
-marks2 = 92
+def add_with_return(a, b):
+    result = a + b
+    return result  # gives the number back
 
-print(f"{display_score(name1,marks1)}")
-print(f"{display_score(name2,marks2)}")
+x = add_with_print(5, 3)
+print(f"x contains: {x}")
 
+y = add_with_return(5, 3)
+print(f"y contains: {y}")
+
+print(y + 1)
+print(x + 1)
